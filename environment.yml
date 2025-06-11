@@ -1,0 +1,76 @@
+name: data100-FA23
+
+channels:
+- conda-forge
+- pytorch
+
+dependencies:
+  # Items required for basic level functionality
+  - gh-scoped-creds==4.1
+  - git==2.49.0
+  - jupyter-archive==3.4.0
+  - jupyter-offlinenotebook==0.3.1
+  - jupyter-resource-usage==1.1.1
+  - jupyter-server-proxy==4.4.0
+  - jupyter_server==2.16.0
+  - jupyterhub==5.3.0
+  - jupyterlab==4.4.3
+  - jupyterlab-git==0.51.1
+  - jupyterlab_rise==0.43.1
+  - jupytext==1.16.6
+  - nbgitpuller==1.2.2
+  - notebook==7.4.3
+  - otter-grader==6.1.3
+  - pip==25.1.1
+  - python==3.13.3
+
+  # other packages
+  - duckdb==1.3.0
+  - duckdb-engine==0.15.0
+  - folium==0.19.7
+  - h5netcdf==1.6.1
+  - ipywidgets==8.1.7
+  - jupysql==0.11.1
+  - jupyterlab-favorites==3.2.2
+  - jupyterlab_server==2.27.3
+  - jupyterlab_widgets==3.0.15
+  - matplotlib==3.10.3
+  - mdit-py-plugins==0.4.2
+  - mlxtend==0.23.4
+  - numpy==2.3.0
+  - pandas==2.3.0
+  - plotly==6.1.2
+  - pytest-notebook==0.10.0
+  - requests==2.32.4
+  - scikit-image==0.25.2
+  - scikit-learn==1.7.0
+  - scipy==1.15.2
+  - seaborn==0.13.2
+  - sqlalchemy==2.0.41
+  - statsmodels==0.14.4
+  - tensorflow-cpu==2.18.0
+  - ydata-profiling==4.16.0
+
+  # Spring 2024 data 100
+  - cpuonly==2.0
+  - pytorch==2.7.0
+  - transformers==4.52.4
+  # Spring 2024 table demos
+  - lxml==5.4.0
+  # Spring 2024 Econ 148 Packages
+  - geopandas==1.1.0
+  - geopy==2.4.1
+  - lifelines==0.30.0
+  - pycountry==24.6.1
+
+  # pip installed pacakges, conda preferred
+  - pip:
+    # required for basic functionality
+    - git-credential-helpers==0.2
+    - git+https://github.com/shaneknapp/python-popularity-contest.git@add-error-handling
+    - nbconvert[webpdf]==7.16.6
+
+    # disable until fixed (probably this:  https://github.com/jupyterlab/jupyter-collaboration/issues/162)
+    # DH-418, 2024-01-16, above issue still not fixed.  Also this package is available in condaforge
+    # https://anaconda.org/conda-forge/jupyter-collaboration
+    # - jupyter_collaboration==1.0.1
