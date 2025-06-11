@@ -1,6 +1,6 @@
 ## Update_single_user_image 
 
-The script takes an environment.yml as the input and prints an updated_environment.yml, with updated conda dependencies and pip dependencies. 
+The script takes an environment.yml as the input and prints an updated_environment.yml, with updated conda dependencies and pip dependencies. All the comments and other sections stay the same. 
 
 The conda dependencies versions are pulled from anaconda.org/conda-forge and the pip versions are pulled from pypi.org, by parsing the html response. 
 
